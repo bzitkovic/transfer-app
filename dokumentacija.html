@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/bzitkovic.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>  
+
+<script src="./js/bzitkovic.js"></script>
+<title>TransMarkt</title>
+</head>
+<body>
+    <header>
+        <div class="grid-header">
+        
+            <div class="header-main">
+                <figure>
+                    <a href="./index.php"><img src="./multimedija/logo.png" alt="TransMarktLogo"> </a>
+                </figure>            
+                
+                <h1>Dokumentacija</h1>
+            </div>
+            
+        </div>
+    </header>
+    
+    <div class="grid-navigation">
+        <nav>
+            <div class="navigation-list">
+                <ul>
+                    <li> <a href="./index.php">Početna</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="dokumentacija">
+        <h2>Opis projektnog zadatka</h2><br>
+        <p>
+            U ovom projektnom zadatku cilj je bio osmisliti i implementirati sustav za upravljanje kupovinom i prodajom igrača u klubovima. Sustav je zamišljen 
+            da bude izveden kroz uloge neregistriranog korisnik, registriranog (igrača), moderatora (vlasnik kluba) i administratora koji upravlja cjeloukupnom aplikacijom.
+        </p><br>
+    
+        <h2>Opis projektnog rješenja</h2><br>
+        <p>
+           Rješenje je se sastoji od implementiranog sustava za upravljanje kupovinom i prodajom igrača u klubovima. Neregistrirani korisnik ima mogućnost pregleda svih klubova u sustavu s njihovom ukupnom
+           vrijednošću, pregled galerije igrača i drugo. Registrirani korisnik (igrač) ima sva prava ko i neregistirani korisnik, a uz sve to ima i mogućnost upravljanja svojim profilom gdje 
+           ima pregled svojih transfera, ponuda koje mu se nude i drugo. Moderator (vlasnik kluba) ima sva prava ko i uloge niže razine, a dodatno što ima je upravljanje svojim klubom i 
+           pregled transfera u domeni njegovog sporta. Administrator ima sva prava i mogućnost upravljanja nad cjelokupnim sustavom.
+        </p><br>
+    
+        <h2>ERA model</h2><br>
+        <img src="./multimedija/eraModel.png" alt="era-model"><br>
+    
+        <h2>Navigacijski dijagrami</h2><br>
+        <img src="./multimedija//neregistriraniKorisnik.png" alt="neregistraniKorisnik"><br><br>
+        <p>Neregistrani korisnik ima pristup početnoj stranici, stranici o autoru, isto tako može vidjeti popis klubova te galeriju igrača. <br> Ako želi postati registrarni korisnik 
+            ima mogućnost registracije.
+        </p><br>
+        <img src="./multimedija/registriraniKorisnikIgrac.png" alt="registriraniKorisnik"><br><br>
+        <p>Registrirani korisnik ima sve mogućnosti kao i neregistrani, a uz sve to ima i mogućnost pregleda i uređivanja svog profila na stranici. <br> Pod pregled
+            profila se podrazumijeva uvid u popis ponuda, pregled svojih transfera, a isto tako može zatražiti i zahtjev za napuštanje.
+        </p><br>
+        <img src="./multimedija/moderatorVlasnik.png" alt="moderator"><br><br>
+        <p>
+            Moderator uz sve navedeno u prošlim ulogama ima i mogućnost cjelokupnog uređivanja svog glupa i upravljanjem transferima.
+        </p><br>
+        <img src="./multimedija/administrator.png" alt="administrator"><br><br>
+        <p>Administrator ima sve ovlasti na sustavu.
+        </p><br>
+
+        <h2>Korišteni alati i tehnologije</h2><br>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>PHP</li>
+            <li>PHPMyAdmin</li>
+            <li>MySQL</li>
+            <li>Draw.io</li>
+            <li>XAMPP</li>
+            <li>PuTTY</li>
+            <li>FileZilla</li>
+        </ul><br><br>
+
+        <h2>Korištene vanjske biblioteke</h2><br>
+        <ul>
+            <li>jQUERY</li>
+            <li>baza.class.php</li>
+            <li>sesija.class.php</li>
+            <li>Smarty</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="grid-footer">
+            <div class="footer-main">
+                <div class="footer-description">
+                    <p>&copy; 2020 &nbsp; Bruno Žitković &nbsp; | &nbsp; <a href="mailto: bzitkovic@foi.hr ">bzitkovic@foi.hr</a></p>
+                </div>
+                <div class="footer-image">
+                    <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2019%2Fzadaca_01%2Fbzitkovic%2Findex.html"><img class="icon " src="./multimedija/HTML5-icon.png " alt="HTMLSLika "></a>
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2019%2Fzadaca_01%2Fbzitkovic%2Fcss%2Fbzitkovic.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img class="icon " src="./multimedija/CSS3-icon.png " alt="CSSSlika "></a>
+                </div>
+            </div>   
+        </div>
+    </footer>   
+</body>
+</html>

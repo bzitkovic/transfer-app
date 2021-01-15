@@ -1,0 +1,846 @@
+/* General settings */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.dokumentacija {
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.dokumentacija img {
+    width: 1090px;
+    height: 400px;
+    padding-bottom: 50px; 
+}
+
+.dokumentacija ul {
+    list-style-type: none;
+}
+
+a:hover {
+    color:#418006;
+}
+
+body.dark-mode {
+    background-color: #111;
+    color: #eee;
+}
+body.dark-mode ul a {
+    color: #111;
+}
+
+body.dark-mode a {
+    color: #eee;
+}
+
+body.dark-mode .info-box__btn-join {
+    color: #111;
+}
+
+body.dark-mode .info-box__btn-join:hover {
+    color:#418006;
+}
+
+body.dark-mode p {
+    color: rgb(9, 83, 19);
+}
+
+body.dark-mode span{
+    color: #111;
+}
+
+body.dark-mode label{
+    color: #eee;
+}
+
+body.dark-mode h1, h2 {
+    color: #111;
+}
+
+body.dark-mode .darkModeButton  {
+    background-color: #111;
+    color: #111;
+}
+
+body.light-mode .darkModeButton {
+    background-color: #eee;
+    color: #111;
+}
+
+body.light-mode {
+    background-color: #eee;
+    color: #111;
+}
+
+
+h1{
+    font-size: small;
+}
+
+
+.naslov {
+    font-size: xx-large;
+    color: chocolate;
+    text-align: center;
+    padding: 20px;
+}
+
+.darkModeButton {
+    width: 50px;
+    height: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+
+
+.message{
+    margin-bottom: 20px;
+    text-align: center;
+    color: red;
+}
+
+/* Header */
+
+.grid-header {
+    grid-column: 1 / span 6;
+    grid-row: 1 / 2 ;
+    background-color: whitesmoke;
+}
+
+.header-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-main img {
+    width: 150px;
+    height: 150px;
+}
+
+
+/* Navigation */
+.grid-navigation {  
+    grid-row: 2 / 3;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(255, 111, 86);
+}
+
+.navigation-list a {
+    color: white;
+}
+
+.navigation-list a:hover {
+    color:#418006; 
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+   
+}
+
+.navigation-list li{
+    font-size: x-large;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Author */
+
+.main-author{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-image{
+    padding: 60px;
+}
+
+.author-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.author-description{
+    padding: 25px;
+    line-height: 40px;
+    font-size: 21px;
+    color: black;
+    text-align: center;
+}
+
+/*  Gallery */
+
+.search-container{
+    text-align: center;
+}
+
+.pagination {
+    padding: 20px;
+    font-size: larger;
+    text-align: center;
+}
+
+.gallery-grid{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.img-container img{
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .gallery-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        
+    }
+}
+
+
+/* Main page clubs */
+
+.section-clubs .info-box {
+    margin: 10px;
+}
+
+
+.section-clubs {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 80px 80px;
+}
+
+@media only screen and (min-width: 765px) {
+    .section-clubs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 1024px;
+        padding: 80px 80px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .section-clubs {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 80px 80px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .section-clubs {
+        gap: 60px;
+        padding: 0;
+        padding: 80px 80px;
+    }
+}
+
+
+.info-box {
+    background: #efefef;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.info-box__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+.info-box__icon {
+    flex: 1 0 25px;
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+
+.info-box__title {
+    font-size: 21px;
+}
+
+.info-box__subheader {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.info-box__subheader-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-box__subheader-figure {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.info-box__subheader-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info-box__about {
+    padding: 30px 0;
+    font-size: 17px;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    text-align: center;
+}
+
+.info-box__footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.info-box__btn-join {
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease-out;
+}
+
+.info-box__btn-join:hover {
+    color: #58a510;
+}
+
+
+/* Login */
+
+.login-container{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 488px;
+ 
+}
+
+.btn-gallery{
+    padding: 15px;
+    height: 53px;
+    width: 200px;
+    background-color: rgb(53, 141, 62);
+    border: none;
+    font-size: normal;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-obrasci {
+    padding: 15px;
+    width: 175px;
+    background-color: rgb(53, 141, 62);
+    border: none;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-obrasci:hover {
+    background-color:rgb(71, 110, 252);
+}
+
+.form-container {
+    text-align: center;
+    margin: auto;
+}
+
+.form-container label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    color: rgb(26, 25, 24);
+    padding: 20px;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+select{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 53px;
+    width: 150px;
+    display: inline-block;
+    border: none;
+    background: #7879c4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+input[type=url],
+input[type="tel"],
+input[type="file"],
+input[type="datetime-local"],
+input[type="range"],
+input[type="date"],
+input[type="time"] {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 53px;
+    width: 400px;
+    border: none;
+    background: #7879c4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    height: 20px;
+    width: 20px;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+}
+
+input[type="color"] {
+    height: 40px;
+    width: 100px;
+}
+
+.visetruki-odabir {
+    height: 138px;
+    width: 15%;
+    text-align: center;
+    font-size: 18px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=tel]:focus,
+input[type="file"]:focus,
+input[type="datetime-local"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    background-color: rgb(71, 110, 252);
+    outline: none;
+}
+
+/* Profil igraca */
+
+.btn-prikazi {
+    padding: 15px;
+    width: 175px;
+    background-color: rgb(53, 141, 62);
+    border: none;
+    font-size: normal;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.buttonTransferi-container {
+    text-align: left;
+}
+
+.buttonZahtjevaZaTransferom-container {
+    text-align: left;
+}
+
+.buttonPonude-container {
+    text-align: left;
+}
+
+.buttonSlobodniIgraci-container {
+    text-align: left;
+}
+
+.buttonIgraciUKlubovima-container {
+    text-align: left;
+}
+
+.buttonTransferniZahtjevi-container {
+    text-align: left;
+}
+
+.buttonTransferiPoDatumu-container {
+    text-align: left;
+}
+
+.buttonZahtjeviZaNapustanje-container{
+    text-align: left;
+}
+
+.buttonBlokiraniKorisnici-container{
+    text-align: left;
+}
+
+
+.buttonDnevnik-container{
+    text-align: left;
+}
+
+.buttonKlub-container{
+    text-align: left;
+}
+
+.buttonKorisnik-container{
+    text-align: left;
+}
+
+.buttonPonuda-container{
+    text-align: left;
+}
+
+.buttonProfil-container{
+    text-align: left;
+}
+
+.buttonSport-container{
+    text-align: left;
+}
+
+.buttonTip-container{
+    text-align: left;
+}
+
+.buttonTransfer-container{
+    text-align: left;
+}
+
+.buttonTransferniZahtjevi-container{
+    text-align: left;
+}
+
+.buttonUloga-container{
+    text-align: left;
+}
+
+.buttonIgraci-container{
+    text-align: left;
+}
+
+
+.btn-prikazi:hover {
+    background-color:rgb(71, 110, 252);
+}
+
+
+/* Registration */
+.registration-container {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.captchaImg img {
+    border: orchid;
+}
+
+/* List of clubs */
+.container-table {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    padding: 50px;
+}
+
+#tablica {
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaTransfera{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaPonuda{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaZahtjevaZaTransferom{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaSlobodnihIgraca{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaIgracaUKlubovima{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaZahtjevaZaTransferomUKlubu{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaDolaznihTransfera{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+#tablicaOdlaznihTransfera{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaZahtjevaZaNapustanje{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaBlokiranihKorisnika{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaDnevnik{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaKlub{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaKorisnik{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: x-small;
+}
+
+#tablicaPonuda{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: x-small;
+}
+
+#tablicaProfil{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: x-small;
+}
+
+#tablicaSport{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: x-small;
+}
+
+
+#tablicaTip{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaTransfera{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaTransfernizahtjevi{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaUloga{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tablicaIgraca{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr th {
+    background-color: #505160;
+}
+
+th,
+td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 30px;
+}
+
+.neparni-red {
+    width: auto;
+    background-color: #aebd38;
+}
+
+.neparni-red td[rowspan="2"] {
+    background-color: #68829e;
+}
+
+.parni-red {
+    width: auto;
+    background-color: #598234;
+}
+
+/* Profil administratora */
+
+.admin-info {
+    width: 50%;
+    display: grid;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.admin2-info {
+    width: 90%;
+    display: grid;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Profil vlasnika */
+
+.vlasnik-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    margin: auto;
+    column-gap: 50px;;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+.vlasnik-info {
+    width: 50%;
+    display: grid;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Profil igraca */
+.igrac-info {
+    width: 50%;
+    display: grid;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+.grid-footer{
+    grid-column: 1 / span 6;
+    grid-row: 5 / 6 ;
+    background-color:rgb(62, 133, 71);
+    align-content: center;
+   
+}
+
+.footer-main {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 150px;
+}
+
+.footer-main a {
+    color: white;
+}
+
+.footer-main a:hover {
+    color: black;
+}
+
+.footer-image img {
+    width: 50px;
+    height: 50px;
+}
