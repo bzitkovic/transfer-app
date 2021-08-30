@@ -1,5 +1,5 @@
 # Transfer application
-Application which controls player transfers.
+The application consists of an implemented system for managing the purchase and sale of players in clubs
 
 Tehnology used:
  * HTML
